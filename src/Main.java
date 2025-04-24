@@ -7,6 +7,9 @@ public class Main {
                 new Estudiante("Carlos", 21, new double[]{}) // Error: sin notas
         };
 
+        Estudiante[]vacio=new Estudiante[0];
+        Estudiante mejor2=GestorEstudiantes.encontrarMejorEstudiante(vacio);
+
         System.out.println("Calculando el mejor estudiante...");
         Estudiante mejor = GestorEstudiantes.encontrarMejorEstudiante(estudiantes);
         System.out.println("El mejor estudiante es: " + mejor.getNombre()); // Posible NullPointerException
